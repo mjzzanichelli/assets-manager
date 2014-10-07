@@ -191,7 +191,7 @@ A ragistered task is a sequence of tasks. The global registered tasks are:
 
 In addition to the global (js+css) registered tasks above, the following apply on javascripts only.
 
- * `js` -> `clean` + `uglify` + `concat:dist` + `clean
+ * `js` -> `clean` + `uglify` + `concat:dist` + `clean`
  * `jskeep` -> `clean` + `uglify` + `concat:dist`
  * `jscomplete` -> `clean` + `uglify` + `concat:dist` + `concat:original` + `clean`
  * `jscompletekeep` -> `clean` + `uglify` + `concat:dist` + `concat:original`
