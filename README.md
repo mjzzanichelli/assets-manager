@@ -193,8 +193,8 @@ In addition to the global (js+css) registered tasks above, the following apply o
 
  * `js` -> `clean` + `uglify` + `concat:dist` + `clean
  * `jskeep` -> `clean` + `uglify` + `concat:dist`
- * `jscomplete` -> `clean` + `uglify + `concat:dist` + `concat:original` + `clean`
- * `jscompletekeep` -> `clean` + `uglify + `concat:dist` + `concat:original`
+ * `jscomplete` -> `clean` + `uglify` + `concat:dist` + `concat:original` + `clean`
+ * `jscompletekeep` -> `clean` + `uglify` + `concat:dist` + `concat:original`
 
 Registered tasks run alike any other task.
 
