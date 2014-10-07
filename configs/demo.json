@@ -1,0 +1,44 @@
+{
+	"javascripts":[
+		{
+			"id": "jsdemo"
+			, "source": "src/js"
+			, "destination": "dist/js"
+			, "virtualpath":"/public/js"
+			, "bundles":[
+				{
+					"id": "demo-bundle-A"
+					, "options": {"no-create":true}
+					, "assets": [
+						{"type": "files", "src": ["demo-file-A.js","demo-file-B.js"]}
+					]
+				},
+				{
+					"id": "demo-bundle-B"
+					, "options": {}
+					, "assets": [
+						{"type": "bundles", "src": ["jsdemo.demo-bundle-A"]},
+						{"type": "files", "src": ["demo-file-C.js"]}
+					]
+				}
+			]
+		}
+	]
+	, "styles":[
+		{
+			"id": "cssdemo"
+			, "source": "src/css"
+			, "destination": "dist/css"
+			, "virtualpath":"/public/js"
+			, "bundles":[
+				{
+					"id": "demo-bundle-A"
+					, "options": {}
+					, "assets": [
+						{"type": "files", "src": ["demo-file-A.css","demo-file-B.css","demo-file-C.css"]}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,8 @@
+{
+	"configs":[
+		{
+			"id": "demo",
+			"path": "configs/demo.json"
+		}
+	]
+}
