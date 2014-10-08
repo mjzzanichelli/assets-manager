@@ -7,18 +7,18 @@
 			, "virtualpath":"/public/js"
 			, "bundles":[
 				{
-					"id": "demo-bundle-A"
+					"id": "bundleA"
 					, "options": {"no-create":true}
 					, "assets": [
-						{"type": "files", "src": ["demo-file-A.js","demo-file-B.js"]}
+						{"type": "files", "src": ["fileA.js","fileB.js"]}
 					]
 				},
 				{
-					"id": "demo-bundle-B"
+					"id": "bundleB"
 					, "options": {}
 					, "assets": [
-						{"type": "bundles", "src": ["jsdemo.demo-bundle-A"]},
-						{"type": "files", "src": ["demo-file-C.js"]}
+						{"type": "bundles", "src": ["jsdemo.bundleA"]},
+						{"type": "files", "src": ["fileC.js"]}
 					]
 				}
 			]
@@ -32,10 +32,10 @@
 			, "virtualpath":"/public/js"
 			, "bundles":[
 				{
-					"id": "demo-bundle-A"
+					"id": "bundleA"
 					, "options": {}
 					, "assets": [
-						{"type": "files", "src": ["demo-file-A.css","demo-file-B.css","demo-file-C.css"]}
+						{"type": "files", "src": ["fileA.css","fileB.css","fileC.css"]}
 					]
 				}
 			]
