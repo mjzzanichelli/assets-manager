@@ -1,6 +1,6 @@
 {
-  "name": "Grunt-TEST", 
-  "version": "0.0.1",
+  "name": "Assets-Manager", 
+  "version": "0.1.0",
   "private": true,
   "description": "assets delivery provider",
   "dependencies": {
