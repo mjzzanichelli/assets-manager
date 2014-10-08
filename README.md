@@ -132,20 +132,16 @@ Assets in a bundle use the property `type` to indentify whether to look for new 
 
 The files used to generate the destination output will concatenate as follows
 
-|--------------------------------------------------------------------------------------------------------------------
-|	BUNDLES				|	OUTPUT							|	FILES					|	BUNDLES REFERENCE		|
-|--------------------------------------------------------------------------------------------------------------------
-|	jsdemo.bundle-A		|	NONE							|	src/js/demo-file-A.js	|	NONE					|
-|															|	src/js/demo-file-B.js	|	NONE					|
-|--------------------------------------------------------------------------------------------------------------------
-|	jsdemo.bundle-B		|	dist/js/demo-bundle-B.min.js	|	src/js/demo-file-A.js	|	jsdemo.demo-bundle-A	|
-|						|									|	src/js/demo-file-B.js	|	jsdemo.demo-bundle-A	|
-|						|									|	src/js/demo-file-C.js	|	NONE					|
-|--------------------------------------------------------------------------------------------------------------------
-|	jsdemo.bundle-C		|	dist/js/demo-bundle-C.min.js	|	src/js/demo-file-C.js	|	NONE					|
-|						|									|	src/js/demo-file-A.js	|	jsdemo.demo-bundle-A	|
-|						|									|	src/js/demo-file-B.js	|	jsdemo.demo-bundle-A	|
-|--------------------------------------------------------------------------------------------------------------------
+|BUNDLES|OUTPUT|FILES|REFERENCES|
+|:-------|:------|:-----|-----------------:|
+|jsdemo.bundle-A|NONE|src/js/demo-file-A.js|NONE|
+|||src/js/demo-file-B.js|NONE|
+|jsdemo.bundle-B|dist/js/demo-bundle-B.min.js|src/js/demo-file-A.js|jsdemo.demo-bundle-A|
+|||src/js/demo-file-B.js|jsdemo.demo-bundle-A|
+|||	src/js/demo-file-C.js|NONE|
+|jsdemo.bundle-C|dist/js/demo-bundle-C.min.js|src/js/demo-file-C.js|NONE|
+|||	src/js/demo-file-A.js|jsdemo.demo-bundle-A|
+|||	src/js/demo-file-B.js|jsdemo.demo-bundle-A|
 The file `demo-file-C.js` is used at the bottom in `demo-bundle-B` and at the top `demo-bundle-B`.
 
 ### Key Notes
